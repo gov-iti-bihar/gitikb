@@ -6,184 +6,205 @@
     <style>
         body{
             font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+            margin:0;
+            background-color:#f5f5f5;
         }
-.topbar{
-    background:#8B0000;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 30px;
-    flex-wrap:wrap;
-}
 
-.logo-area{
-    display:flex;
-    align-items:center;
-}
+        /* Top Navigation Bar */
+        .topbar{
+            background:#8B0000;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:12px 30px;
+            flex-wrap:wrap;
+        }
 
-.logo-area img{
-    width:60px;
-    height:60px;
-    background:white;
-    border-radius:6px;
-    margin-right:12px;
-}
+        .logo-area{
+            display:flex;
+            align-items:center;
+        }
 
-.title h2{
-    margin:0;
-    color:white;
-    font-size:24px;
-}
+        .logo-area img{
+            width:60px;
+            height:60px;
+            background:white;
+            border-radius:6px;
+            margin-right:12px;
+        }
 
-.title p{
-    margin:0;
-    font-size:14px;
-}
+        .title h2{
+            margin:0;
+            color:white;
+            font-size:24px;
+        }
 
-.menu{
-    list-style:none;
-    display:flex;
-    gap:25px;
-    margin:0;
-    padding:0;
-}
+        .title p{
+            margin:0;
+            font-size:14px;
+        }
 
-.menu a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:16px;
-}
+        .menu{
+            list-style:none;
+            display:flex;
+            gap:25px;
+            margin:0;
+            padding:0;
+        }
 
-.menu a:hover{
-    color:#ffd700;
-}
+        .menu a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:16px;
+        }
 
-@media(max-width:900px){
-    .topbar{
-        flex-direction:column;
-    }
+        .menu a:hover{
+            color:#ffd700;
+        }
 
-    .menu{
-        margin-top:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-}
-<nav class="topbar">
-    <div class="logo-area">
-        <img src="logo.png" alt="Institute Logo">
-        <div class="title">
-            <h2>GITI Kalyanbigha</h2>
-            <p>Nalanda, Bihar</p>
-        </div>
-    </div>
-
-    <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Trades</a></li>
-        <li><a href="#">Admissions</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Downloads</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>        header{
-            background: #003366;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 10px;
+        /* Header */
+        header{
+            background:#003366;
+            color:white;
+            padding:30px;
+            text-align:center;
         }
 
         .logo{
-            width: 500px;
-            height: auto;
-            background: white;
-            padding: 5px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            width:150px;
+            height:auto;
+            background:white;
+            padding:5px;
+            border-radius:10px;
+            margin-bottom:10px;
         }
 
+        /* Sections */
         section{
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
+            background:white;
+            max-width:1200px;
+            margin:20px auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
         }
 
         h1,h2{
-            margin-top: 0;
+            margin-top:0;
         }
 
         ul{
-            line-height: 1.8;
+            line-height:1.8;
         }
 
         footer{
-            text-align: center;
-            margin-top: 20px;
-            padding: 15px;
-            background: #003366;
-            color: white;
-            border-radius: 10px;
+            text-align:center;
+            margin-top:20px;
+            padding:15px;
+            background:#003366;
+            color:white;
         }
+
+        @media(max-width:900px){
+
+            .topbar{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .menu{
+                margin-top:15px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
-<header>
+    <!-- Top Navigation Bar -->
 
-    <!-- Upload your logo as logo.png -->
-    <img src="logo.png" alt="Institute Logo" class="logo">
+    <nav class="topbar">
 
-    <h1>Government Industrial Training Institute</h1>
-    <h2>Kalyanbigha, Nalanda, Bihar</h2>
+        <div class="logo-area">
+            <img src="logo.png" alt="Institute Logo">
 
-    <p>Skill Development & Technical Training</p>
+            <div class="title">
+                <h2>GITI Kalyanbigha</h2>
+                <p>Nalanda, Bihar</p>
+            </div>
+        </div>
 
-</header>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Trades</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
 
-<section>
-    <h2>About Us</h2>
+    </nav>
 
-    <p>
-        Government Industrial Training Institute (GITI), Kalyanbigha,
-        Nalanda provides quality vocational and technical training to
-        students for employment and self-employment opportunities.
-    </p>
-</section>
+    <!-- Main Header -->
 
-<section>
-    <h2>Trades Offered</h2>
+    <header>
 
-    <ul>
-        <li>Electrician</li>
-        <li>Fitter</li>
-        <li>Computer Operator & Programming Assistant (COPA)</li>
-        <li>Other NSQF / CTS Courses</li>
-    </ul>
-</section>
+        <img src="logo.png" alt="Institute Logo" class="logo">
 
-<section>
-    <h2>Contact Information</h2>
+        <h1>Government Industrial Training Institute</h1>
 
-    <p><strong>Address:</strong> GITI Kalyanbigha, Nalanda, Bihar</p>
+        <h2>Kalyanbigha, Nalanda, Bihar</h2>
 
-    <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+        <p>Skill Development & Technical Training</p>
 
-    <p><strong>Email:</strong> info@gitikb.in</p>
-</section>
+    </header>
 
-<footer>
-    © 2026 Government Industrial Training Institute, Kalyanbigha, Nalanda
-</footer>
+    <section>
+
+        <h2>About Us</h2>
+
+        <p>
+            Government Industrial Training Institute (GITI), Kalyanbigha,
+            Nalanda provides quality vocational and technical training
+            to students for employment and self-employment opportunities.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Trades Offered</h2>
+
+        <ul>
+            <li>Electrician</li>
+            <li>Fitter</li>
+            <li>Computer Operator & Programming Assistant (COPA)</li>
+            <li>Other CTS / NSQF Courses</li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Contact Information</h2>
+
+        <p><strong>Address:</strong> GITI Kalyanbigha, Nalanda, Bihar</p>
+
+        <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+
+        <p><strong>Email:</strong> principal@gitikb.in</p>
+
+    </section>
+
+    <footer>
+        © 2026 Government Industrial Training Institute, Kalyanbigha, Nalanda
+    </footer>
 
 </body>
 </html>
