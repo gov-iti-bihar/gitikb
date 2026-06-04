@@ -1,72 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Government Industrial Training Institute Kalyanbigha</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background-color:#f5f5f5;
-        }
+<title>Government Industrial Training Institute Kalyanbigha</title>
 
-        /* Top Navigation Bar */
-        .topbar{
-            background:#8B0000;
-            color:white;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:12px 30px;
-            flex-wrap:wrap;
-        }
+<style>
 
-        .logo-area{
-            display:flex;
-            align-items:center;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        .logo-area img{
-            width:60px;
-            height:60px;
-            background:white;
-            border-radius:6px;
-            margin-right:12px;
-        }
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
 
-        .title h2{
-            margin:0;
-            color:white;
-            font-size:24px;
-        }
+/* TOP BAR */
 
-        .title p{
-            margin:0;
-            font-size:14px;
-        }
+.topbar{
+    background:#8B0000;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 30px;
+    flex-wrap:wrap;
+}
 
-        .menu{
-            list-style:none;
-            display:flex;
-            gap:25px;
-            margin:0;
-            padding:0;
-        }
+.logo-area{
+    display:flex;
+    align-items:center;
+}
 
-        .menu a{
-            color:white;
-            text-decoration:none;
-            font-weight:bold;
-            font-size:16px;
-        }
+.logo-area img{
+    width:60px;
+    height:60px;
+    background:white;
+    border-radius:6px;
+    margin-right:12px;
+}
 
-        .menu a:hover{
-            color:#ffd700;
-        }
+.title h2{
+    margin:0;
+    color:white;
+}
 
-        .dropdown{
+.title p{
+    margin:0;
+    font-size:14px;
+}
+
+/* MENU */
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.menu > li{
     position:relative;
 }
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#ffd700;
+}
+
+/* DROPDOWN */
 
 .dropdown-content{
     display:none;
@@ -74,12 +85,12 @@
     top:100%;
     left:0;
     background:white;
-    min-width:180px;
+    min-width:300px;
     list-style:none;
     padding:0;
     margin:0;
-    box-shadow:0 2px 10px rgba(0,0,0,0.2);
-    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    z-index:999;
 }
 
 .dropdown-content li{
@@ -88,9 +99,8 @@
 
 .dropdown-content li a{
     display:block;
-    padding:10px;
     color:black;
-    text-decoration:none;
+    padding:10px 15px;
 }
 
 .dropdown-content li a:hover{
@@ -101,205 +111,214 @@
     display:block;
 }
 
-        /* Header */
-        header{
-            background:#003366;
-            color:white;
-            padding:30px;
-            text-align:center;
-        }
+/* HEADER */
 
-        .logo{
-            width:150px;
-            height:auto;
-            background:white;
-            padding:5px;
-            border-radius:10px;
-            margin-bottom:10px;
-        }
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
 
-        /* Sections */
-        section{
-            background:white;
-            max-width:1200px;
-            margin:20px auto;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-        }
+.logo{
+    width:150px;
+    background:white;
+    border-radius:10px;
+    padding:5px;
+}
 
-        h1,h2{
-            margin-top:0;
-        }
+/* SECTIONS */
 
-        ul{
-            line-height:1.8;
-        }
+section{
+    background:white;
+    max-width:1200px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
 
-        footer{
-            text-align:center;
-            margin-top:20px;
-            padding:15px;
-            background:#003366;
-            color:white;
-        }
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
 
-        @media(max-width:900px){
+/* MOBILE */
 
-            .topbar{
-                flex-direction:column;
-                text-align:center;
-            }
+@media(max-width:900px){
 
-            .menu{
-                margin-top:15px;
-                flex-wrap:wrap;
-                justify-content:center;
-            }
-        }
+    .topbar{
+        flex-direction:column;
+        text-align:center;
+    }
 
-    </style>
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
-    <!-- Top Navigation Bar -->
+<!-- NAVIGATION -->
 
-    <nav class="topbar">
+<nav class="topbar">
 
-        <div class="logo-area">
-            <img src="logo.png" alt="Institute Logo">
+    <div class="logo-area">
 
-            <div class="title">
-                <h2>GITI Kalyanbigha</h2>
-                <p>Nalanda, Bihar</p>
-            </div>
+        <img src="logo.png" alt="Institute Logo">
+
+        <div class="title">
+            <h2>GITI Kalyanbigha</h2>
+            <p>Nalanda, Bihar</p>
         </div>
 
-        
-        <ul class="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#trades">Trades</a></li>
-    <li><a href="#admissions">Admissions</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#downloads">Downloads</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+    </div>
+
+    <ul class="menu">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#about">About</a></li>
 
         <li class="dropdown">
-    <a href="#trades">Trades ▾</a>
 
-    <ul class="dropdown-content">
-        <li><a href="#EL">Electrician</a></li>
-        <li><a href="#EM">Electronics Mechanics</a></li>
-        <li><a href="#ICTSM">Information & Communication Technology System Maintenance</a></li>
-        <li><a href="#FT">Fitter</a></li>
-        <li><a href="#MACH">Machinist</a></li>
-        <li><a href="#RACT">Refrigeration & Air Conditioning Technician</a></li>
-        <li><a href="#MD">Mechanic Diesel</a></li>
-        <li><a href="#WL">Welder</a></li>
+            <a href="#trades">Trades ▾</a>
+
+            <ul class="dropdown-content">
+
+                <li><a href="#EL">Electrician</a></li>
+                <li><a href="#EM">Electronics Mechanic</a></li>
+                <li><a href="#ICTSM">ICTSM</a></li>
+                <li><a href="#FT">Fitter</a></li>
+                <li><a href="#MACH">Machinist</a></li>
+                <li><a href="#RACT">R&ACT</a></li>
+                <li><a href="#MD">Mechanic Diesel</a></li>
+                <li><a href="#WL">Welder</a></li>
+
+            </ul>
+
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+
     </ul>
-</li>
 
-    </nav>
+</nav>
 
-    <!-- Main Header -->
+<!-- HEADER -->
 
-    <header>
+<header>
 
-        <img src="logo.png" alt="Institute Logo" class="logo">
+    <img src="logo.png" alt="Institute Logo" class="logo">
 
-        <h1>Government Industrial Training Institute</h1>
+    <h1>Government Industrial Training Institute</h1>
 
-        <h2>Kalyanbigha, Nalanda, Bihar</h2>
+    <h2>Kalyanbigha, Nalanda, Bihar</h2>
 
-        <p> Under Youth Employment & Skill Development Department, Bihar</p>
+    <p>Under Youth Employment & Skill Development Department, Bihar</p>
 
-    </header>
+</header>
 
-    <section>
+<!-- ABOUT -->
 
-        <h2>About Us</h2>
+<section id="about">
 
-        <p>
-            Government Industrial Training Institute (GITI), Kalyanbigha,
-            Nalanda provides quality vocational and technical training
-            to students for employment and self-employment opportunities.
-        </p>
+    <h2>About Us</h2>
 
-    </section>
+    <p>
+        Government Industrial Training Institute (GITI),
+        Kalyanbigha, Nalanda provides quality vocational
+        and technical training to prepare skilled manpower
+        for industry and self-employment.
+    </p>
 
-    <section>
+</section>
 
-        <h2>Trades Offered</h2>
+<!-- TRADES -->
 
-        <ul>
-            <li>Electrician</li>
-            <li>Electronics Mechanics</li>
-            <li>Information & Communication Technology System Maintenance</li>
-            <li>Fitter</li>
-            <li>Machinist</li>
-            <li>Refrigeration & Air Conditioning Technician</li>
-            <li>Mechanic Diesel</li>
-            <li>Welder</li>
-        </ul>
+<section id="trades">
 
-<section>
-    <section id="EL">
+    <h2>Trades Offered</h2>
+
+    <ul>
+        <li>Electrician</li>
+        <li>Electronics Mechanic</li>
+        <li>Information & Communication Technology System Maintenance</li>
+        <li>Fitter</li>
+        <li>Machinist</li>
+        <li>Refrigeration & Air Conditioning Technician</li>
+        <li>Mechanic Diesel</li>
+        <li>Welder</li>
+    </ul>
+
+</section>
+
+<!-- INDIVIDUAL TRADES -->
+
+<section id="EL">
     <h2>Electrician</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="EM">
-    <h2>Electronics Mechanics</h2>
+<section id="EM">
+    <h2>Electronics Mechanic</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="ICTSM">
+<section id="ICTSM">
     <h2>Information & Communication Technology System Maintenance</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="FT">
+<section id="FT">
     <h2>Fitter</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="MACH">
+<section id="MACH">
     <h2>Machinist</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="RACT">
+<section id="RACT">
     <h2>Refrigeration & Air Conditioning Technician</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="MD">
+<section id="MD">
     <h2>Mechanic Diesel</h2>
+    <p>Trade details will be added here.</p>
 </section>
 
-<section>
-    <section id="WL">
+<section id="WL">
     <h2>Welder</h2>
+    <p>Trade details will be added here.</p>
 </section>
-                            
-    <section>
 
-        <h2>Contact Information</h2>
+<!-- CONTACT -->
 
-        <p><strong>Address:</strong> GITI Kalyanbigha, Nalanda, Bihar</p>
+<section id="contact">
 
-        <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+    <h2>Contact Information</h2>
 
-        <p><strong>Email:</strong> itikalyanbigha2013@gmail.com</p>
+    <p><strong>Address:</strong> GITI Kalyanbigha, Nalanda, Bihar</p>
 
-    </section>
+    <p><strong>Email:</strong> itikalyanbigha2013@gmail.com</p>
 
-    <footer>
-        © 2026 Government Industrial Training Institute, Kalyanbigha, Nalanda
-    </footer>
+    <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+
+</section>
+
+<footer>
+    © 2026 Government Industrial Training Institute, Kalyanbigha, Nalanda
+</footer>
 
 </body>
 </html>
